@@ -9,5 +9,11 @@ public class CounterService : ICounterService
         NotifyStateChanged();
     }
 
+    public void Reset()
+    {
+        Count = 0;
+        NotifyStateChanged();
+    }
+
     private void NotifyStateChanged() => OnChange?.Invoke();
 }

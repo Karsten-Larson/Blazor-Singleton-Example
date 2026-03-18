@@ -1,4 +1,4 @@
-public class CounterService
+public class CounterService : ICounterService
 {
     public int Count { get; private set; }
     public event Action? OnChange;

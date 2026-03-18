@@ -7,10 +7,10 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 // One instance is created and shared by every component and every user session
-builder.Services.AddSingleton<CounterService>();
+builder.Services.AddSingleton<ICounterService, CounterService>();
 
 // A new instance is created every time the service is requested
-// builder.Services.AddTransient<CounterService>();
+// builder.Services.AddTransient<ICounterService, CounterService>();
 
 var app = builder.Build();
 

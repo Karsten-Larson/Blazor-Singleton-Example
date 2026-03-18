@@ -4,11 +4,22 @@
 
 <PageTitle>Counter</PageTitle>
 
-<h1>Counter</h1>
+<div class="d-flex align-items-center justify-content-center px-3 py-4 singleton-page min-vh-100">
+    <div class="p-4 p-md-5 text-center singleton-card">
+        <h1 class="mb-2 text-warning display-4 fw-bold">Global Singleton Counter</h1>
+        <p class="mb-3 lead singleton-subtitle">Shared across all users and tabs</p>
+        <hr class="my-3" />
 
-<p role="status">Current count: @CounterService.Count</p>
+        <h2 class="my-4 singleton-count singleton-count-color fw-bold" role="status">@CounterService.Count</h2>
 
-<button class="btn btn-primary" @onclick="CounterService.Increment">Click me</button>
+        <button class="w-100 text-uppercase btn btn-warning singleton-button fw-bold"
+                @onclick="CounterService.Increment">
+            Increment Global State
+        </button>
+
+        <p class="mt-4 mb-0 fst-italic singleton-hint">Open this in another tab to see the magic!</p>
+    </div>
+</div>
 
 @code {
     protected override void OnInitialized()

@@ -1,0 +1,34 @@
+.singleton-card[b-q6tqon6s7o] {
+  width: min(760px, 100%);
+  background: #1a1e27;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.45);
+}
+
+.singleton-count[b-q6tqon6s7o] {
+  font-size: clamp(4rem, 13vw, 9.375rem);
+  line-height: 1;
+}
+
+.singleton-count-color[b-q6tqon6s7o] {
+  color: #f8f9fa;
+}
+
+.singleton-subtitle[b-q6tqon6s7o] {
+  color: #adb5bd;
+}
+
+.singleton-hint[b-q6tqon6s7o] {
+  color: #8f98a3;
+}
+
+.singleton-card hr[b-q6tqon6s7o] {
+  border-color: rgba(255, 255, 255, 0.14);
+  opacity: 1;
+}
+
+.singleton-button[b-q6tqon6s7o] {
+  padding: 1.25rem 1rem;
+  letter-spacing: 0.03em;
+}

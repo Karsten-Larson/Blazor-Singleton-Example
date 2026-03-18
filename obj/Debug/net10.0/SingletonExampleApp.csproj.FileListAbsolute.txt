@@ -81,5 +81,5 @@
 /home/karsten/Coding/C#/SingletonExampleApp/obj/Debug/net10.0/SingletonExampleApp.genruntimeconfig.cache
 /home/karsten/Coding/C#/SingletonExampleApp/obj/Debug/net10.0/ref/SingletonExampleApp.dll
 /home/karsten/Coding/C#/SingletonExampleApp/obj/Debug/net10.0/scopedcss/Components/Pages/Counter.razor.rz.scp.css
-/home/karsten/Coding/C#/SingletonExampleApp/obj/Debug/net10.0/compressed/y4hbyuhu45-{0}-v4demavq51-v4demavq51.gz
-/home/karsten/Coding/C#/SingletonExampleApp/obj/Debug/net10.0/compressed/vhyfsl835h-{0}-v4demavq51-v4demavq51.gz
+/home/karsten/Coding/C#/SingletonExampleApp/obj/Debug/net10.0/compressed/y4hbyuhu45-{0}-4ck4zx4hey-4ck4zx4hey.gz
+/home/karsten/Coding/C#/SingletonExampleApp/obj/Debug/net10.0/compressed/vhyfsl835h-{0}-4ck4zx4hey-4ck4zx4hey.gz

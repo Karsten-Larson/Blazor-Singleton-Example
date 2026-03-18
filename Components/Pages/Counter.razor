@@ -6,23 +6,23 @@
 
 <div class="d-flex align-items-center justify-content-center px-3 py-4 singleton-page min-vh-100">
     <div class="p-4 p-md-5 text-center singleton-card">
-        <h1 class="mb-2 text-warning display-4 fw-bold">Global Singleton Counter</h1>
-        <p class="mb-3 lead singleton-subtitle">Shared across all users and tabs</p>
+        <h1 class="mb-2 text-primary display-4 fw-bold">Local Counter</h1>
+        <p class="mb-3 lead singleton-subtitle">Only available in this tab</p>
         <hr class="my-3" />
 
         <h2 class="my-4 singleton-count singleton-count-color fw-bold" role="status">@CounterService.Count</h2>
 
-        <button class="w-100 text-uppercase btn btn-warning singleton-button fw-bold"
+        <button class="w-100 text-uppercase btn btn-primary singleton-button fw-bold"
                 @onclick="CounterService.Increment">
-            Increment Global State
+            Increment Local State
         </button>
 
         <button class="mt-4 w-100 text-uppercase btn btn-danger singleton-button fw-bold"
                 @onclick="CounterService.Reset">
-            Reset Global State
+            Reset Local State
         </button>
 
-        <p class="mt-4 mb-0 fst-italic singleton-hint">Open this in another tab to see the magic!</p>
+        <p class="mt-4 mb-0 fst-italic singleton-hint">Open this in another tab to see nothing...</p>
     </div>
 </div>
 

@@ -1,0 +1,32 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@inject CounterService CounterService
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @CounterService.Count</p>
+
+<button class="btn btn-primary" @onclick="CounterService.Increment">Click me</button>
+
+@code {
+    protected override void OnInitialized()
+    {
+        // Subscribe to the event
+        CounterService.OnChange += HandleStateChanged;
+    }
+
+    private async void HandleStateChanged()
+    {
+        // We call InvokeAsync because the event might come from a different
+        // thread/circuit, and we need to tell Blazor to re-render the UI.
+        await InvokeAsync(StateHasChanged);
+    }
+
+    public void Dispose()
+    {
+        // UN-subscribe when the component is destroyed
+        CounterService.OnChange -= HandleStateChanged;
+    }
+}
